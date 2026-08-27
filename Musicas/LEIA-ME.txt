@@ -1,0 +1,25 @@
+COMO COLOCAR AS 4 MÚSICAS PARA TOCAR OFFLINE (SEM YOUTUBE)
+===============================================================
+
+A página já está pronta para tocar OFFLINE! Basta colocar 4 arquivos .mp3 nesta pasta:
+
+1) 01-hino-sao-paulo.mp3          -> Hino do São Paulo - Salve o Tricolor Paulista
+2) 02-oracao-pela-familia.mp3     -> Padre Zezinho - Oração pela Família
+3) 03-pela-luz-dos-olhos-teus.mp3 -> Tom Jobim & Miúcha - Pela Luz dos Olhos Teus
+4) 04-jorge-mateus-sosseguei.mp3  -> Jorge & Mateus - Sosseguei
+
+PASSO A PASSO:
+1. Baixe as músicas em MP3 (do seu celular/computador - use sua conta Spotify/YouTube Music e converta, ou baixe do YouTube com site tipo y2mate, 4kdownload, etc)
+2. Renomeie EXATAMENTE com os nomes acima
+3. Cole os 4 arquivos DENTRO desta pasta "Musicas" (ao lado de Imagens)
+4. Atualize a página (F5) - os players pretos vão tocar direto, SEM ERRO 153, mesmo sem internet!
+
+DICA: Se ainda não colocou os arquivos, o player vai mostrar um aviso, mas o clique na CAPA continua levando ao YouTube normalmente.
+
+Arquivos esperados pela página:
+- Musicas/01-hino-sao-paulo.mp3
+- Musicas/02-oracao-pela-familia.mp3
+- Musicas/03-pela-luz-dos-olhos-teus.mp3
+- Musicas/04-jorge-mateus-sosseguei.mp3
+
+Qualquer dúvida, me chame!

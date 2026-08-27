@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Samira Souza Silva | Meu Amor Tricolor com Deus no Centro ❤️✝️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sp-red: #DA291C;
+  --sp-red-dark: #9B1B11;
+  --sp-black: #0D0D0D;
+  --sp-white: #FFFFFF;
+  --sp-gray: #F5F5F5;
+  --gold: #C9A84C;
+  --gold-light: #F2DE9A;
+  --radius: 18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: var(--sp-white);
+  color: var(--sp-black);
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--sp-red);
+  display:flex;justify-content:space-between;align-items:center;
+  padding: 12px 5%;
+}
+nav .logo{
+  font-family:'Playfair Display', serif;
+  font-weight:900;letter-spacing:1px;
+  font-size:1.05rem;
+}
+nav .logo span{color:var(--sp-red)}
+nav .logo small{display:block;font-family:'Montserrat',sans-serif;font-weight:400;font-size:0.60rem;letter-spacing:2.5px;color:#666;margin-top:-2px}
+nav ul{list-style:none;display:flex;gap:20px;font-size:0.82rem;font-weight:500}
+nav ul a{text-decoration:none;color:var(--sp-black);transition:.2s}
+nav ul a:hover{color:var(--sp-red)}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse at top left, rgba(218,41,28,0.12), transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(201,168,76,0.10), transparent 60%),
+    linear-gradient(180deg, #fff 0%, #FFF7F0 100%);
+  display:flex;align-items:center;
+  padding: 90px 5% 60px;
+  gap:40px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"✝";
+  position:absolute;top:90px;right:30px;
+  font-size:18rem;opacity:0.03;color:var(--sp-black);
+  font-family:'Cormorant Garamond', serif;
+}
+.hero-left{flex:1.2;z-index:2}
+.hero-right{flex:0.9;z-index:2;display:flex;justify-content:center}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background: var(--sp-black);color:#fff;
+  padding:7px 14px;border-radius:999px;font-size:0.70rem;letter-spacing:1.3px;
+}
+.badge.gold{background: linear-gradient(135deg, #C9A84C, #8C6B1E);color:#fff}
+.badge i{width:8px;height:8px;background:var(--sp-red);border-radius:50%;display:inline-block;animation:pulse 1.4s infinite}
+.badge.gold i{background:#fff}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.4)}}
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size: clamp(2.3rem, 5vw, 4.0rem);
+  line-height:0.95;font-weight:900;
+}
+.hero h1 em{
+  font-family:'Great Vibes', cursive;
+  font-weight:400;color:var(--sp-red);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  display:block;margin-top:6px;
+}
+.hero p.sub{
+  margin:16px 0 14px;color:#444;font-weight:300;line-height:1.75;max-width:580px;font-size:1.02rem;
+}
+.hero p.sub strong{color:var(--sp-red);font-weight:600}
+.hero .verse{
+  margin:0 0 22px;max-width:560px;
+  background:#fff;border-left:4px solid var(--gold);padding:12px 16px;border-radius:0 12px 12px 0;
+  font-family:'Cormorant Garamond', serif;font-style:italic;color:#5a4a1a;line-height:1.5;font-size:1.05rem;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+.hero .verse span{display:block;font-family:'Montserrat',sans-serif;font-style:normal;font-size:0.72rem;letter-spacing:1px;color:#999;margin-top:4px;font-weight:600}
+.cta{ display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:0.88rem;transition:.25s;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{background:var(--sp-red);color:#fff;box-shadow:0 10px 24px rgba(218,41,28,0.28)}
+.btn-primary:hover{background:var(--sp-black);transform:translateY(-2px)}
+.btn-ghost{border:2px solid var(--sp-black);color:var(--sp-black);background:#fff}
+.btn-ghost:hover{background:var(--sp-black);color:#fff}
+
+/* Foto destaque hero */
+.frame{
+  position:relative;width:100%;max-width:420px;
+  background:#fff;padding:14px 14px 52px 14px;
+  border-radius:6px;box-shadow:0 20px 50px rgba(0,0,0,0.18);
+  transform:rotate(1.2deg);
+}
+.frame img{width:100%;height:470px;object-fit:cover;border-radius:4px;display:block}
+.frame::after{
+  content:"Samira Souza Silva — Meu amor para sempre ❤️✝️";
+  position:absolute;bottom:16px;left:0;width:100%;text-align:center;
+  font-family:'Great Vibes',cursive;font-size:1.30rem;color:#222;
+}
+.frame .pin{
+  position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  width:68px;height:22px;background:var(--sp-red);opacity:0.9;border-radius:2px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.frame .heart-badge{
+  position:absolute;top:22px;right:22px;
+  background:var(--sp-red);color:#fff;width:42px;height:42px;border-radius:50%;
+  display:grid;place-items:center;font-size:1.15rem;box-shadow:0 8px 18px rgba(218,41,28,0.4);
+  animation: heartBeat 1.6s infinite;
+}
+@keyframes heartBeat{0%,100%{transform:scale(1)}14%{transform:scale(1.15)}28%{transform:scale(1)}42%{transform:scale(1.15)}70%{transform:scale(1)}}
+
+/* FAIXA TRICOLOR */
+.tricolor{height:14px;display:flex}
+.tricolor span:nth-child(1){flex:1;background:var(--sp-red)}
+.tricolor span:nth-child(2){flex:1;background:var(--sp-white);border-top:1px solid #eee;border-bottom:1px solid #eee}
+.tricolor span:nth-child(3){flex:1;background:var(--sp-black)}
+
+/* CARTA - escuro com detalhe dourado */
+.carta{
+  padding:80px 5%;background:var(--sp-black);color:#fff;position:relative;overflow:hidden;
+}
+.carta::before{
+  content:"✝";position:absolute;font-size:20rem;opacity:0.04;right:-10px;top:-30px;color:var(--gold);
+  font-family:'Cormorant Garamond', serif;
+}
+.carta-grid{max-width:1150px;margin:0 auto;display:grid;grid-template-columns:1.18fr 0.82fr;gap:50px;align-items:start}
+.carta h2{font-family:'Playfair Display',serif;font-size:2.55rem;line-height:1}
+.carta h2 span{color:var(--sp-red);font-family:'Great Vibes',cursive;font-weight:400;font-size:3.1rem;display:block;margin-top:6px}
+.carta .kicker{color:var(--gold);letter-spacing:3px;font-size:0.72rem;font-weight:600;margin-bottom:10px}
+.carta .texto{
+  margin-top:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.18);
+  padding:26px 28px;border-radius:var(--radius);line-height:1.9;color:#E9E9E9;font-weight:300;
+  backdrop-filter: blur(6px);
+}
+.carta .texto p{margin-bottom:14px}
+.carta .texto strong{color:#fff;font-weight:600}
+.carta .texto em{color:var(--gold-light);font-style:italic}
+.carta .texto .destaque{
+  background: linear-gradient(135deg, rgba(218,41,28,0.15), rgba(201,168,76,0.12));
+  border-left:3px solid var(--sp-red);padding:14px 16px;border-radius:0 12px 12px 0;margin:16px 0;
+  color:#fff;font-weight:400;
+}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.stat{background:#fff;color:var(--sp-black);padding:16px;border-radius:14px;text-align:center}
+.stat b{font-family:'Playfair Display',serif;font-size:1.45rem;color:var(--sp-red);display:block}
+.stat small{font-size:0.68rem;letter-spacing:1.2px;text-transform:uppercase;color:#666}
+
+/* FÉ - seção clara com cruz */
+.fe{
+  padding:80px 5%;background: linear-gradient(180deg, #FFFDF5 0%, #FFFFFF 100%);
+  position:relative;overflow:hidden;
+}
+.fe::before{
+  content:"";position:absolute;inset:0;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.08), transparent 70%);
+}
+.fe-inner{max-width:1100px;margin:0 auto;position:relative}
+.fe-header{text-align:center;max-width:720px;margin:0 auto 42px}
+.fe-header .cross{font-size:2.2rem;color:var(--gold);margin-bottom:8px}
+.fe-header h2{font-family:'Playfair Display',serif;font-size:2.45rem}
+.fe-header h2 em{font-family:'Great Vibes',cursive;color:var(--sp-red);font-weight:400;font-size:2.9rem}
+.fe-header p{color:#666;margin-top:10px;line-height:1.7}
+.versiculo{
+  max-width:760px;margin:0 auto 36px;background:#fff;border:1px solid rgba(201,168,76,0.25);
+  border-radius:16px;padding:24px 28px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+.versiculo blockquote{
+  font-family:'Cormorant Garamond', serif;font-size:1.35rem;line-height:1.5;color:#2b2b2b;font-style:italic;
+}
+.versiculo cite{display:block;margin-top:10px;font-size:0.78rem;letter-spacing:1.5px;color:var(--gold);font-weight:700;font-style:normal}
+.fe-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fe-card{
+  background:#fff;border-radius:16px;padding:26px;text-align:center;
+  border-top:3px solid var(--gold);box-shadow:0 10px 26px rgba(0,0,0,0.06);
+}
+.fe-card .fe-icon{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem}
+.fe-card:nth-child(1) .fe-icon{background:var(--sp-black);color:var(--gold-light)}
+.fe-card:nth-child(2) .fe-icon{background:var(--sp-red);color:#fff}
+.fe-card:nth-child(3) .fe-icon{background:#FFF8E1;color:#8C6B1E;border:1px solid #F2DE9A}
+.fe-card h3{font-size:1rem;margin-bottom:8px}
+.fe-card p{font-size:0.88rem;color:#5a5a5a;line-height:1.6}
+
+/* MOTIVOS */
+.motivos{padding:80px 5%;background:var(--sp-gray)}
+.section-title{text-align:center;max-width:700px;margin:0 auto 44px}
+.section-title h2{font-family:'Playfair Display',serif;font-size:2.45rem}
+.section-title h2 i{color:var(--sp-red)}
+.section-title p{color:#666;margin-top:10px;line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto}
+.card{
+  background:#fff;border-radius:var(--radius);padding:26px;
+  border-top:4px solid var(--sp-red);box-shadow:0 10px 30px rgba(0,0,0,0.06);
+  transition:.25s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.1)}
+.card .icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.card:nth-child(1) .icon{background:#FFF0F0}
+.card:nth-child(2) .icon{background:#111;color:#fff}
+.card:nth-child(3) .icon{background:#FFF8E7}
+.card:nth-child(4) .icon{background:#111;color:var(--gold-light)}
+.card:nth-child(5) .icon{background:#FFF0F0}
+.card:nth-child(6) .icon{background:#111;color:#fff}
+.card h3{font-size:1.02rem;margin-bottom:8px}
+.card p{font-size:0.88rem;color:#555;line-height:1.6}
+
+/* MÚSICAS - Nossa Trilha Sonora */
+.musicas{padding:80px 5%;background: var(--sp-black);color:#fff;position:relative;overflow:hidden}
+.musicas::before{content:"♪";position:absolute;font-size:18rem;opacity:0.04;right:-20px;top:-20px;color:var(--gold)}
+.musicas-inner{max-width:1150px;margin:0 auto;position:relative}
+.musicas-header{text-align:center;max-width:750px;margin:0 auto 44px}
+.musicas-header .kicker{color:var(--gold);letter-spacing:3px;font-size:0.72rem;font-weight:700}
+.musicas-header h2{font-family:'Playfair Display',serif;font-size:2.5rem;line-height:1}
+.musicas-header h2 span{font-family:'Great Vibes',cursive;color:var(--sp-red);font-weight:400;font-size:2.9rem}
+.musicas-header p{color:#b5b5b5;margin-top:10px;line-height:1.7;font-weight:300}
+.musicas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.music-card{
+  background: #1a1a1a;border:1px solid rgba(201,168,76,0.18);border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;transition:.25s;
+}
+.music-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,0.35);box-shadow:0 18px 40px rgba(0,0,0,0.35)}
+.music-card.featured{border-top:3px solid var(--sp-red)}
+.music-card.faith{border-top:3px solid var(--gold)}
+.music-card.romantica{border-top:3px solid #E8A0BF}
+.music-card.jm{border-top:3px solid var(--sp-red)}
+.music-thumb{position:relative;aspect-ratio:16/9.2;background:#000;overflow:hidden;display:block;text-decoration:none}
+.music-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.3s;filter:brightness(0.92)}
+.music-thumb:hover img{transform:scale(1.05);filter:brightness(1)}
+.music-thumb .play-overlay{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 100%);
+}
+.music-thumb .play-btn{
+  width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.95);
+  display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 22px rgba(0,0,0,0.35);
+  transition:.2s; color: var(--sp-red);
+}
+.music-thumb:hover .play-btn{transform:scale(1.08);background:#fff}
+.music-thumb .play-label{
+  position:absolute;bottom:12px;right:12px;
+  background:rgba(0,0,0,0.75);color:#fff;font-size:0.68rem;padding:6px 10px;border-radius:999px;
+  letter-spacing:0.5px;backdrop-filter:blur(4px);
+}
+.music-badge{
+  position:absolute;top:12px;left:12px;
+  padding:6px 12px;border-radius:999px;font-size:0.68rem;letter-spacing:1px;font-weight:700;
+  backdrop-filter:blur(8px);
+}
+.music-badge.tricolor{background: var(--sp-red);color:#fff}
+.music-badge.fe-badge{background: linear-gradient(135deg, #C9A84C, #8C6B1E);color:#fff}
+.music-badge.rom-badge{background:#fff;color:#8B2C4A}
+.music-badge.jm-badge{background:#0D0D0D;color:#fff;border:1px solid var(--sp-red)}
+.music-info{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.music-info h3{font-family:'Playfair Display',serif;font-size:1.12rem;line-height:1.2}
+.music-info h3 small{display:block;font-family:'Montserrat',sans-serif;font-size:0.70rem;letter-spacing:1.5px;color:var(--gold);margin-bottom:4px;font-weight:700}
+.music-info p{font-size:0.84rem;color:#b8b8b8;line-height:1.6;margin:8px 0 14px;flex:1}
+.music-info blockquote{
+  background: rgba(255,255,255,0.06);border-left:3px solid var(--sp-red);
+  padding:10px 14px;border-radius:0 10px 10px 0;
+  font-family:'Cormorant Garamond',serif;font-style:italic;color:#e8e8e8;font-size:0.95rem;line-height:1.5;margin-bottom:14px;
+}
+.music-card.faith blockquote{border-left-color:var(--gold)}
+.music-card.romantica blockquote{border-left-color:#E8A0BF}
+.music-actions{display:flex;gap:10px;flex-wrap:wrap}
+.music-actions a{
+  flex:1;text-align:center;padding:10px 14px;border-radius:999px;font-size:0.80rem;font-weight:600;text-decoration:none;transition:.2s;
+}
+.btn-play{background:var(--sp-red);color:#fff}
+.btn-play:hover{background:#fff;color:var(--sp-black)}
+.btn-lyric{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.18)}
+.btn-lyric:hover{background:#fff;color:var(--sp-black)}
+.music-card.faith .btn-play{background: var(--gold);color:var(--sp-black)}
+.music-card.romantica .btn-play{background:#E8A0BF;color:#fff}
+.music-audio{width:100%;margin-bottom:14px;border-radius:999px;height:38px;accent-color:var(--sp-red)}
+.music-card.faith .music-audio{accent-color:var(--gold)}
+.music-card.romantica .music-audio{accent-color:#E8A0BF}
+.music-audio-hint{font-size:0.68rem;color:#888;margin:-8px 0 12px;letter-spacing:0.3px}
+.musicas-obs{max-width:800px;margin:28px auto 0;text-align:center;color:#888;font-size:0.80rem;line-height:1.6}
+.musicas-obs strong{color:var(--gold-light)}
+
+/* GALERIA */
+.galeria{padding:80px 5%;background:#fff}
+.galeria-grid{
+  max-width:1150px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+}
+.galeria-grid a{
+  position:relative;overflow:hidden;border-radius:16px;display:block;
+  aspect-ratio: 3/3.6;background:#f0f0f0;box-shadow:0 8px 22px rgba(0,0,0,0.08);
+}
+.galeria-grid img{width:100%;height:100%;object-fit:cover;transition:.5s;display:block}
+.galeria-grid a:hover img{transform:scale(1.08)}
+.galeria-grid a::after{
+  content:"♥ Samira";position:absolute;bottom:10px;left:10px;
+  background:rgba(218,41,28,0.9);color:#fff;font-size:0.7rem;padding:6px 10px;border-radius:999px;
+  letter-spacing:0.5px;opacity:0;transform:translateY(8px);transition:.3s;
+}
+.galeria-grid a:hover::after{opacity:1;transform:translateY(0)}
+
+/* FINAL - oração */
+.final{
+  padding:90px 5%;text-align:center;
+  background: linear-gradient(180deg, #fff 0%, #FFF6F0 60%, #fff 100%);
+  position:relative;
+}
+.final::before{
+  content:"✝";position:absolute;top:20px;left:50%;transform:translateX(-50%);
+  font-size:10rem;opacity:0.03;font-family:'Cormorant Garamond', serif;
+}
+.final-inner{max-width:780px;margin:0 auto;position:relative}
+.final h2{font-family:'Great Vibes',cursive;font-size:3.5rem;color:var(--sp-red);line-height:1}
+.final h3{font-family:'Playfair Display',serif;font-size:2rem;margin-top:-8px}
+.final p{color:#555;line-height:1.85;margin:18px 0 14px;font-weight:300}
+.final .oracao{
+  margin:22px auto;background:#fff;border:1px solid rgba(201,168,76,0.25);border-radius:16px;
+  padding:22px 24px;text-align:left;max-width:640px;box-shadow:0 10px 28px rgba(0,0,0,0.06);
+}
+.final .oracao h4{font-family:'Playfair Display',serif;text-align:center;color:var(--sp-black);margin-bottom:10px}
+.final .oracao p{font-family:'Cormorant Garamond',serif;font-style:italic;color:#333;text-align:center;line-height:1.7;margin:0}
+.assinatura{
+  margin-top:22px;font-family:'Great Vibes',cursive;font-size:2.15rem;color:var(--sp-black);
+}
+.assinatura span{color:var(--sp-red)}
+.hearts{font-size:1.3rem;letter-spacing:8px;margin-top:10px;animation: floatHearts 3s ease-in-out infinite}
+@keyframes floatHearts{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* FOOTER */
+footer{
+  background:var(--sp-black);color:#fff;padding:22px 5%;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  border-top:4px solid var(--sp-red);font-size:0.84rem;
+}
+footer .sp{letter-spacing:2px;font-weight:600}
+footer .sp em{color:var(--sp-red);font-style:normal}
+
+/* RESPONSIVO */
+@media(max-width: 980px){
+  .hero{flex-direction:column;text-align:center}
+  .cta{justify-content:center}
+  .hero p.sub,.hero .verse{margin-left:auto;margin-right:auto}
+  .carta-grid{grid-template-columns:1fr}
+  .fe-cards{grid-template-columns:1fr}
+  .musicas-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .galeria-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width: 640px){
+  nav ul{display:none}
+  .cards{grid-template-columns:1fr}
+  .galeria-grid{grid-template-columns:repeat(2,1fr)}
+  .frame img{height:380px}
+  .stats{grid-template-columns:1fr}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SAMIRA <span>SOUZA SILVA</span> <small>MEU AMOR TRICOLOR • COM DEUS NO CENTRO</small></div>
+  <ul>
+    <li><a href="#carta">Carta</a></li>
+    <li><a href="#fe">Nossa Fé</a></li>
+    <li><a href="#musicas">Trilha Sonora</a></li>
+    <li><a href="#galeria">Fotos</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="badges">
+      <span class="badge"><i></i> SÃO PAULO FUTEBOL CLUBE</span>
+      <span class="badge gold">✝ CATÓLICOS • COM DEUS NO CENTRO</span>
+    </div>
+    <h1>
+      Para a mulher<br>
+      da minha vida,<br>
+      <em>Samira Souza Silva</em>
+    </h1>
+    <p class="sub">
+      Meu <strong>amor tricolor</strong> e minha parceira de fé. Como o São Paulo me ensinou a nunca deixar de acreditar,
+      você e Deus me ensinam, todos os dias, a amar com propósito, paciência e coração inteiro.
+      Vermelho da paixão, branco da paz e preto da força — tudo entregue nas mãos de Deus.
+    </p>
+    <div class="verse">
+      “O amor é paciente, o amor é bondoso... tudo sofre, tudo crê, tudo espera, tudo suporta.”
+      <span>— 1 CORÍNTIOS 13:4-7</span>
+    </div>
+    <div class="cta">
+      <a href="#carta" class="btn btn-primary">❤️ Ler minha carta</a>
+      <a href="#fe" class="btn btn-ghost">✝ Nossa fé</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="frame">
+      <div class="pin"></div>
+      <div class="heart-badge">♥</div>
+      <img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.13.jpeg" alt="Samira Souza Silva">
+    </div>
+  </div>
+</section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
+
+<section id="carta" class="carta">
+  <div class="carta-grid">
+    <div>
+      <div class="kicker">✝ CARTA COM DEUS NO CENTRO</div>
+      <h2>Minha carta <span>para você, Samira</span></h2>
+      <div class="texto">
+        <p>Meu amor,</p>
+        <p>Hoje eu escrevo com o coração mais tranquilo, porque tenho colocado nosso amor nas mãos de <em>Deus</em> e aos cuidados de <em>Nossa Senhora Aparecida</em>. Se antes eu só sabia torcer com paixão, hoje eu aprendi a também <strong>rezar</strong>, esperar e cuidar.</p>
+        
+        <p>Quero que você saiba de algo que tem queimado no meu peito: <strong>eu tenho tentado melhorar nos pequenos detalhes</strong>. Nos detalhes que parecem bobos, mas que mostram amor de verdade — te ouvir com mais calma, responder com mais carinho, lembrar do que é importante pra você, ser mais presente quando você precisa e mais leve quando você só quer paz.</p>
+
+        <div class="destaque">
+          Você é a minha <strong>prioridade</strong>. Não é da boca pra fora. É escolha diária. Entre o barulho do mundo e o silêncio da oração, eu te escolho. Entre o jogo e o terço, eu quero os dois com você — vibrando no Morumbi e rezando lado a lado.
+        </div>
+
+        <p>Mais do que qualquer título que o São Paulo possa ganhar, o meu maior desejo é <strong>te ver bem</strong> — bem com você mesma, bem com Deus, bem com a gente. Quero te ver sorrindo sem peso, dormindo em paz, sonhando alto. Quero ser o homem que te traz segurança quando o dia pesa e que celebra contigo quando Deus nos abençoa.</p>
+
+        <p>Se eu falhei nos detalhes, me perdoa. Estou aprendendo a amar como a Igreja ensina: com <em>paciência, entrega e sacrifício pequeno de cada dia</em>. Não quero um amor de momento, quero um amor de <strong>altar, de família, de para sempre</strong>.</p>
+
+        <p>Samira Souza Silva, minha são-paulina linda, obrigado por ser meu presente de Deus. Eu te amo com a paixão do tricolor e com a fé de quem reza o terço pensando em nós dois.</p>
+
+        <p style="margin-top:16px"><strong>Com todo meu amor tricolor e com Deus no centro,</strong><br><span style="font-family:'Great Vibes',cursive;font-size:1.65rem;color:var(--gold-light)">Seu amor — que te escolhe todos os dias ❤️✝️</span></p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>∞</b><small>Tentativas de melhorar</small></div>
+        <div class="stat"><b>1ª</b><small>Você é prioridade</small></div>
+        <div class="stat"><b>✝</b><small>Deus no centro</small></div>
+      </div>
+    </div>
+    <div style="display:grid;gap:16px">
+      <img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (3).jpeg" alt="Samira" style="width:100%;height:380px;object-fit:cover;border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,0.32)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (1).jpeg" style="width:100%;height:180px;object-fit:cover;border-radius:14px">
+        <img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (2).jpeg" style="width:100%;height:180px;object-fit:cover;border-radius:14px">
+      </div>
+      <div style="background:#fff;color:#222;border-radius:14px;padding:16px;text-align:center;border-top:3px solid var(--gold)">
+        <div style="font-size:1.2rem">✝️ 🤍 ❤️</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;margin-top:6px;color:#444">“Entregue o seu caminho ao Senhor, confie nele, e ele agirá.” <br><span style="font-family:'Montserrat',sans-serif;font-style:normal;font-size:0.70rem;letter-spacing:1px;color:#999">SALMO 37:5</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fe" class="fe">
+  <div class="fe-inner">
+    <div class="fe-header">
+      <div class="cross">✝</div>
+      <h2>Nosso amor com <em>Deus no centro</em></h2>
+      <p>Futebol é paixão. Fé é alicerce. E o nosso amor tem os dois — vibração de arquibancada e silêncio de oração. Que Nossa Senhora Aparecida cubra nossa história com seu manto.</p>
+    </div>
+
+    <div class="versiculo">
+      <blockquote>“Acima de tudo, porém, revistam-se do amor, que é o elo perfeito. E a paz de Cristo seja o árbitro em vossos corações.”</blockquote>
+      <cite>COLOSSENSES 3:14-15</cite>
+    </div>
+
+    <div class="fe-cards">
+      <div class="fe-card">
+        <div class="fe-icon">✝</div>
+        <h3>Rezar por nós</h3>
+        <p>Coloco seu nome nas minhas orações todos os dias — pra Deus te guardar, te acalmar e te fazer sorrir. Quero rezar <strong>com</strong> você, não só <strong>por</strong> você.</p>
+      </div>
+      <div class="fe-card">
+        <div class="fe-icon">❤️</div>
+        <h3>Tricolor de fé</h3>
+        <p>Torcer juntos, rezar juntos. Do Morumbi à capela, que a gente nunca esqueça: o maior título é uma família com Deus no centro.</p>
+      </div>
+      <div class="fe-card">
+        <div class="fe-icon">🕊️</div>
+        <h3>Te ver bem</h3>
+        <p>Meu compromisso é cuidar dos seus detalhes — sua paz, sua saúde, sua fé. Quero ser motivo do seu bem-estar, não do seu cansaço.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="motivos" class="motivos">
+  <div class="section-title">
+    <h2>6 motivos que me fazem <i>te amar</i> mais a cada dia</h2>
+    <p>Entre a bola e o terço, você é minha certeza mais bonita.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="icon">❤️</div><h3>Seu sorriso</h3><p>É meu gol nos acréscimos. Quando você sorri, meu mundo inteiro se acalma.</p></div>
+    <div class="card"><div class="icon">✝</div><h3>Sua fé</h3><p>Católica, de coração entregue. Sua fé me aproxima de Deus e me ensina a amar melhor.</p></div>
+    <div class="card"><div class="icon">⭐</div><h3>Sua força de são-paulina</h3><p>Guerreira, que não abandona. Você me inspira a não desistir de nós nunca.</p></div>
+    <div class="card"><div class="icon">🤍</div><h3>Sua paz</h3><p>Seu abraço é minha capela — silêncio, acolhimento e a certeza de que estou em casa.</p></div>
+    <div class="card"><div class="icon">🌹</div><h3>Seus pequenos detalhes</h3><p>Cada jeitinho seu me ensina a prestar mais atenção, a cuidar melhor, a amar nos detalhes.</p></div>
+    <div class="card"><div class="icon">♾️</div><h3>Nosso futuro com Deus</h3><p>Quero altar, família, filhos são-paulinos e Nossa Senhora nos abençoando. Para sempre.</p></div>
+  </div>
+</section>
+
+<section id="musicas" class="musicas">
+  <div class="musicas-inner">
+    <div class="musicas-header">
+      <div class="kicker">♪ NOSSA TRILHA SONORA • 4 MÚSICAS QUE CONTAM NOSSA HISTÓRIA</div>
+      <h2>Nossa trilha <span>sonora</span></h2>
+      <p>Quatro músicas que resumem nós dois: a paixão tricolor, a fé católica, o romantismo do olhar e a nossa cara — Jorge & Mateus. Dá o play e sente comigo.</p>
+    </div>
+
+    <div class="musicas-grid">
+      <!-- 1 - HINO SPFC -->
+      <div class="music-card featured">
+        <a class="music-thumb" href="https://www.youtube.com/watch?v=S9vqaTbchFY" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/S9vqaTbchFY/hqdefault.jpg" alt="Hino do São Paulo Futebol Clube" loading="lazy">
+          <span class="music-badge tricolor">❤️ TRICOLOR • HINO OFICIAL</span>
+          <div class="play-overlay"><div class="play-btn">▶</div><span class="play-label">Assistir no YouTube</span></div>
+        </a>
+        <div class="music-info">
+          <h3><small>SÃO PAULO FUTEBOL CLUBE</small> Salve o Tricolor Paulista</h3>
+          <p>A nossa paixão em forma de hino. Pra cantar juntos no Morumbi, abraçados, com o coração batendo forte.</p>
+          <blockquote>“Salve o Tricolor Paulista, amado clube brasileiro... Tu és forte, tu és grande, dentre os grandes és o primeiro!”</blockquote>
+          <audio class="music-audio" controls preload="metadata">
+            <source src="Musicas/01-hino-sao-paulo.webm" type="audio/webm">
+            <source src="Musicas/01-hino-sao-paulo.mp3" type="audio/mpeg">
+          </audio>
+          <div class="music-audio-hint">▶ Dá play aqui — funciona offline. Ou clique na capa para ver no YouTube.</div>
+          <div class="music-actions">
+            <a href="https://www.youtube.com/watch?v=S9vqaTbchFY" target="_blank" class="btn-play">▶ YouTube</a>
+            <a href="#galeria" class="btn-lyric">Ver fotos ❤️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 - ORAÇÃO PELA FAMÍLIA -->
+      <div class="music-card faith">
+        <a class="music-thumb" href="https://www.youtube.com/watch?v=XVsvmDoNUZU" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/XVsvmDoNUZU/hqdefault.jpg" alt="Padre Zezinho - Oração pela Família" loading="lazy">
+          <span class="music-badge fe-badge">✝ HINO CATÓLICO • PADRE ZEZINHO</span>
+          <div class="play-overlay"><div class="play-btn">▶</div><span class="play-label">Assistir no YouTube</span></div>
+        </a>
+        <div class="music-info">
+          <h3><small>NOSSA FÉ CATÓLICA</small> Oração pela Família</h3>
+          <p>A música que abençoa nosso amor. Que a nossa família — a que temos e a que vamos construir — comece e termine em Deus.</p>
+          <blockquote>“Que a família comece e termine sabendo onde vai... Que a mulher seja um céu de ternura, aconchego e calor!”</blockquote>
+          <audio class="music-audio" controls preload="metadata">
+            <source src="Musicas/02-oracao-pela-familia.webm" type="audio/webm">
+            <source src="Musicas/02-oracao-pela-familia.mp3" type="audio/mpeg">
+          </audio>
+          <div class="music-audio-hint">▶ Dá play aqui — funciona offline. Ou clique na capa para ver no YouTube.</div>
+          <div class="music-actions">
+            <a href="https://www.youtube.com/watch?v=XVsvmDoNUZU" target="_blank" class="btn-play">▶ YouTube</a>
+            <a href="#fe" class="btn-lyric">Nossa fé ✝</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 - PELA LUZ DOS OLHOS TEUS -->
+      <div class="music-card romantica">
+        <a class="music-thumb" href="https://www.youtube.com/watch?v=w3pGZxUxoLA" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/w3pGZxUxoLA/hqdefault.jpg" alt="Tom Jobim e Miúcha - Pela Luz dos Olhos Teus" loading="lazy">
+          <span class="music-badge rom-badge">🤍 ROMÂNTICA • VINÍCIUS & TOM JOBIM</span>
+          <div class="play-overlay"><div class="play-btn">▶</div><span class="play-label">Assistir no YouTube</span></div>
+        </a>
+        <div class="music-info">
+          <h3><small>PELOS OLHOS TEUS</small> Pela Luz dos Olhos Teus</h3>
+          <p>Aquela que você cantarolou: “pelos olhos teus e a luz dos olhos meus...” — nosso olhar que se encontrou e nunca mais se desgrudou.</p>
+          <blockquote>“Quando a luz dos olhos meus e a luz dos olhos teus resolvem se encontrar... que a luz dos olhos meus precisa se casar.”</blockquote>
+          <audio class="music-audio" controls preload="metadata" src="Musicas/03-pela-luz-dos-olhos-teus.mp3"></audio>
+          <div class="music-audio-hint">▶ Dá play aqui — funciona offline. Ou clique na capa para ver no YouTube.</div>
+          <div class="music-actions">
+            <a href="https://www.youtube.com/watch?v=w3pGZxUxoLA" target="_blank" class="btn-play">▶ YouTube</a>
+            <a href="#carta" class="btn-lyric">Ler carta 💌</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 - JORGE & MATEUS -->
+      <div class="music-card jm">
+        <a class="music-thumb" href="https://www.youtube.com/watch?v=vZcjAmfkemk" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/vZcjAmfkemk/hqdefault.jpg" alt="Jorge & Mateus - Sosseguei" loading="lazy">
+          <span class="music-badge jm-badge">🎸 JORGE & MATEUS • A SUA FAVORITA</span>
+          <div class="play-overlay"><div class="play-btn">▶</div><span class="play-label">Assistir no YouTube</span></div>
+        </a>
+        <div class="music-info">
+          <h3><small>ELA GOSTA • ROMÂNTICA</small> Sosseguei</h3>
+          <p>A sua favorita — e agora a nossa. Porque quando te encontrei, eu também sosseguei. É você, Samira.</p>
+          <blockquote>“Eu sosseguei... Mudei a rota e meus planos, e o que eu tava procurando, eu achei em você.”</blockquote>
+          <audio class="music-audio" controls preload="metadata" src="Musicas/04-jorge-mateus-sosseguei.mp3"></audio>
+          <div class="music-audio-hint">▶ Dá play aqui — funciona offline. Ou clique na capa para ver no YouTube.</div>
+          <div class="music-actions">
+            <a href="https://www.youtube.com/watch?v=vZcjAmfkemk" target="_blank" class="btn-play">▶ YouTube</a>
+            <a href="#carta" class="btn-lyric">Minha prioridade ❤️</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="musicas-obs">💡 <strong>Dica:</strong> Coloca o fone, dá play em cada uma na ordem — Hino → Oração → Olhos Teus → Sosseguei — e lê a carta enquanto ouve. Foi a sequência que pensei pra você sentir tudo. <br> Que tal a gente ouvir juntos a próxima vez? ❤️✝️</p>
+  </div>
+</section>
+
+<section id="galeria" class="galeria">
+  <div class="section-title">
+    <h2>Nossas memórias 📸</h2>
+    <p>Cada foto é uma graça de Deus nas nossas vidas. E ainda vamos viver muitas outras.</p>
+  </div>
+  <div class="galeria-grid">
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.13 (1).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.13 (1).jpeg" alt="Samira 1"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.13 (2).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.13 (2).jpeg" alt="Samira 2"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.13.jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.13.jpeg" alt="Samira 3"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (1).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (1).jpeg" alt="Samira 4"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (2).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (2).jpeg" alt="Samira 5"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (3).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (3).jpeg" alt="Samira 6"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (4).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (4).jpeg" alt="Samira 7"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (5).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (5).jpeg" alt="Samira 8"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (6).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (6).jpeg" alt="Samira 9"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (7).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (7).jpeg" alt="Samira 10"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (8).jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14 (8).jpeg" alt="Samira 11"></a>
+    <a href="Imagens/WhatsApp Image 2026-08-27 at 16.44.14.jpeg" target="_blank"><img src="Imagens/WhatsApp Image 2026-08-27 at 16.44.14.jpeg" alt="Samira 12"></a>
+  </div>
+</section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
+
+<section class="final">
+  <div class="final-inner">
+    <h2>Eu te amo,</h2>
+    <h3>Samira Souza Silva</h3>
+    <p>
+      Que Deus e Nossa Senhora Aparecida abençoem cada passo nosso. Que nosso amor seja <strong>tricolor na paixão</strong> e <strong>católico na entrega</strong> — vibrante como arquibancada e sereno como oração.
+    </p>
+
+    <div class="oracao">
+      <h4>✝ Minha oração por nós</h4>
+      <p>
+        “Senhor, cuida da Samira por mim quando eu não puder estar perto. Guarda o coração dela, renova a alegria dela e faz ela se sentir amada todos os dias — por Ti e por mim. Que ela nunca duvide que é minha prioridade e meu para sempre. Amém.”
+      </p>
+    </div>
+
+    <p style="font-size:0.92rem;color:#444">Prometo continuar melhorando nos detalhes, te colocando em primeiro lugar e fazendo de tudo pra te ver bem, em paz e feliz. Com Deus no centro, com o São Paulo no peito e com você na minha vida.</p>
+
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" class="btn btn-primary" style="margin-top:10px">❤️ Voltar ao início com amor</a>
+    <div class="assinatura">Para sempre seu, <span>com fé e amor</span> ✝️</div>
+    <div class="hearts">❤️ 🤍 🖤 ✝️ 🤍 ❤️</div>
+    <p style="font-size:0.78rem;color:#999;margin-top:18px;letter-spacing:1px">COM DEUS NO CENTRO • SÃO PAULO FUTEBOL CLUBE • 27 DE AGOSTO DE 2026</p>
+  </div>
+</section>
+
+<footer>
+  <div class="sp">SAMIRA <em>•</em> COM DEUS NO CENTRO <em>•</em> SPFC ✝️</div>
+  <div style="opacity:0.7">Vermelho, branco, preto e fé — as cores e a luz do nosso amor ❤️✝️</div>
+</footer>
+
+<script>
+// Pausa os outros audios quando um começar a tocar - só uma música por vez
+document.querySelectorAll('.music-audio').forEach(a => {
+  a.addEventListener('play', () => {
+    document.querySelectorAll('.music-audio').forEach(other => {
+      if (other !== a) other.pause();
+    });
+  });
+  // Mostra aviso amigável se o arquivo ainda não foi colocado
+  a.addEventListener('error', () => {
+    const hint = a.nextElementSibling;
+    if (hint && hint.classList.contains('music-audio-hint')) {
+      hint.innerHTML = '⚠️ Arquivo ainda não encontrado em <code>Musicas/</code>. Veja o README na pasta. Enquanto isso, clique na capa para ouvir no YouTube.';
+      hint.style.color = '#E8A0BF';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
