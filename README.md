@@ -58,3 +58,7 @@ Tudo o que for incluído no site e no repositório será público. Não inclua i
 ## Mídias
 
 As fotografias são servidas a partir de `public/Imagens/`. O acervo musical original foi mantido no repositório para auditoria, mas não foi copiado para a saída pública nesta etapa. A trilha sonora será integrada por fontes oficiais ou materiais com permissão de uso.
+
+## TypeScript
+
+Os aliases do TypeScript usam caminhos explicitamente relativos em `tsconfig.json`, compatíveis com TypeScript 6 sem depender da opção depreciada `baseUrl`.
