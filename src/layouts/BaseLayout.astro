@@ -1,0 +1,58 @@
+---
+import SiteHeader from "@components/SiteHeader.astro";
+import SiteFooter from "@components/SiteFooter.astro";
+import "@styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Nossa história, nossos sonhos e nossa fé.",
+} = Astro.props;
+
+const pageTitle = title.includes("Amor") ? title : title + " | Amor";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f4ef" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl.toString()} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <SiteHeader />
+    <main id="conteudo"><slot /></main>
+    <SiteFooter />
+    <script>
+      const menuToggle = document.querySelector("[data-menu-toggle]");
+      const siteNav = document.querySelector("[data-site-nav]");
+
+      menuToggle?.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        siteNav?.classList.toggle("is-open", !isOpen);
+      });
+
+      siteNav?.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteNav.classList.remove("is-open");
+          menuToggle?.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+  </body>
+</html>

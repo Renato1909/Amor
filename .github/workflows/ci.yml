@@ -1,0 +1,39 @@
+name: Validate Astro site
+
+on:
+  push:
+    branches:
+      - feature/site-expansion
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: astro-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check TypeScript
+        run: npm run typecheck
+
+      - name: Build static site
+        run: npm run build

@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+interface Props {
+  title: string;
+  eyebrow: string;
+  description: string;
+  symbol?: string;
+}
+const { title, eyebrow, description, symbol = "✦" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title={title + " | Amor"} description={description}>
+  <section class="coming-page">
+    <div class="coming-card">
+      <span class="coming-symbol" aria-hidden="true">{symbol}</span>
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="coming-description">{description}</p>
+      <p class="coming-note">
+        Esta área faz parte da nova edição do Amor e será preenchida com registros reais,
+        preservando a história e os detalhes que merecem ser lembrados.
+      </p>
+      <a class="button button--primary" href={base}>Voltar ao início <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>

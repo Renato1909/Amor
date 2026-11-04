@@ -1,0 +1,23 @@
+{
+  "name": "amor-site",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Livro digital da nossa história, dos nossos sonhos e da nossa fé.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=9.6.5"
+  },
+  "dependencies": {
+    "astro": "7.4.5"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}
